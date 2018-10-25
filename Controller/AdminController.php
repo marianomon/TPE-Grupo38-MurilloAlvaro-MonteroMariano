@@ -83,7 +83,7 @@ class AdminController extends SecuredController
   }
 
   function FormularioAgregarPelicula(){
-    $Generos = $this->model->GetGeneros();
+    $Generos = $this->GeneroModel->GetGeneros();
     $this->view->MostrarFormularioAgregarPelicula($this->Titulo, $Generos);
   }
 
