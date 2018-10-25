@@ -104,7 +104,7 @@ class AdminController extends SecuredController
 
   function MostrarEstrenosAdmin(){
     $PeliculasEstrenos = $this->model->BuscarEstrenos();
-    $Generos = $this->model->GetGeneros();
+    $Generos = $this->GeneroModel->GetGeneros();
     $this->view->MostrarEstrenosViewAdmin($this->Titulo, $PeliculasEstrenos, $Generos);
   }
 
