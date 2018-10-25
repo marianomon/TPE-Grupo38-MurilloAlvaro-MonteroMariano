@@ -43,8 +43,6 @@ class GeneroModel
     function ActualizarNombreGenero($nombre, $id_genero){
       $sentencia = $this->db->prepare("update genero set nombre=? where id_genero=?");
       $sentencia->execute(array($nombre, $id_genero[0]));
-      var_dump($nombre, $id_genero[0]);
-      die();
       header(HOMEADMIN . "/generoAdmin");
     }
 
